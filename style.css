@@ -1,5 +1,6 @@
-body,html {
+* {
     margin: 0;
+    padding: 0;
 }
 .couverture{ 
     background-image: url('http://www.dole-benelux.com/extension/doledesign/design/doledesign/images/kochbanane/header.jpg');
@@ -7,7 +8,6 @@ body,html {
     background-repeat: no-repeat;
     background-size: cover;
  }
-
  .titre {
     color: white;
     font-size: 50px;
@@ -15,12 +15,13 @@ body,html {
     left: 100px;
     top: 250px;
     bottom: 0px
-    
- }
-
- h2{
+     }
+p{
+  padding: 100px;
+}
+h2{
     color:rgb(4, 5, 78);
-    font-size: 50px
+    font-size: 50px;
 }
 h3{
   color:black;
@@ -29,32 +30,44 @@ h4{
   color:white;
 }
 .box{
-  width: 45%;
-  height:45% ;
+
   display: inline-block;
-  padding: 5px;
+ 
   text-align: justify;
-  margin-left: 30px;
-  background-color: lightgrey
-}
-.box:hover{
   
-  border: 1px solid black;
-  outline-style: solid;
+  background-color: lightgrey;
+  
+  
 }
-.dark{
+.grey{
+ 
   width: 45%;
   height:45% ;
-  display: inline-block;
-  padding: 5px;
-  text-align: justify;
-  margin-left: 30px;
-  background-color:rgb(70, 71, 71);
+
 }
-.dark:hover{
+
+.dark{
+
+  display: inline-block;
+  
+  text-align: justify;
+  
+  background-color:rgb(70, 71, 71);
+  width: 45%;
+  height:45% ;
+}
+.dark:hover, .box:hover{
   border: 1px solid black;
-  outline-style: solid;
+  
 }
 .boxes{
-  margin: 100px;
+  margin: 50px;
+  margin-left: 100px;
+}
+.article-title{
+  position: relative;
+  left: 50px;
+  top: 50px;
+  bottom: 0px;
+  font-size: 30px;
 }
